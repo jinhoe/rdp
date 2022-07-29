@@ -19,6 +19,7 @@ Using batch script I can predefined the server IP and credential. The only issue
 1. Store server IP and credential
 2. Launch Remote Desktop Connection and connect to the server
 3. Delete server IP and credential
+
 This is how 
 
 # Reality
