@@ -20,6 +20,7 @@ Using batch script I can predefined the server IP and credential. The only issue
 2. Launch Remote Desktop Connection and connect to the server
 3. Delete server IP and credential
 
-This is how 
+It is important to remove the server IP and credential after used because I do not want to store it in the laptop. With this solution, I organized primary and seconday servers in folders and name the batch file by Application Name and Hostname like this:
+BITBUCKET HOSTNAME.bat
 
 # Reality
