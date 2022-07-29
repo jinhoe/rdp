@@ -10,8 +10,12 @@ It require more steps to access those servers now.
 5. Copy and paste username
 6. Copy and paste password
 7. Click connect in Remote Desktop Connection
-test
+
 # Initial Idea
+My inital idea was to create a PowerShell script that can store the list of servers in a dictionary (or hash table). And it will display a list of servers and ask for your input to access which server. But I'm not satisfied with this additional step, I want to access the server much faster - like just double click a file and I'm in.
+
+# Solution
+Using batch script I can predefined the server IP and credential. The only issue is that I have to create a batch file for each server but it achieve my "double click" requirement. The time creating those batch files versus time saving for our team is definitely worth it.
 
 
 
