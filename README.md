@@ -15,7 +15,7 @@ It require more steps to access those servers now.
 My inital idea was to create a PowerShell script that can store the list of servers in a dictionary (or hash table). And it will display a list of servers and ask for your input to access which server. But I'm not satisfied with this additional step, I want to access the server much faster - like just double click a file and I'm in.
 
 # Solution
-Using batch script I can predefined the server IP and credential. The only issue is that I have to create a batch file for each server but it achieve my "double click" requirement. The time creating those batch files versus time saving for our team is definitely worth it. Here's what the script does using cmdkey command:
+Using batch script I can predefined the server IP and credential. The only issue is that I have to create a batch file for each server but it achieve my "double click" requirement. The time creating those batch files versus time saving for our team is definitely worth it. Here's what the batch script does using cmdkey command:
 1. Store server IP and credential
 2. Launch Remote Desktop Connection and connect to the server
 3. Delete server IP and credential
@@ -23,6 +23,7 @@ Using batch script I can predefined the server IP and credential. The only issue
 It is important to remove the server IP and credential after used because I do not want to store it in the laptop. With this solution, I organized primary and seconday servers in folders and name the batch file by Application Name and Hostname like this: BITBUCKET HOSTNAME.bat
 
 # Problem with my solution
-
+The thing is, in a highly secure environment, password changes frequently. So what this mean is I have to edit all the batch files with new password when that happens. Of course I knew there must be a better way, and sure it is. PowerShell script is here to save the day! First you need to define the path to the batch files, and using the find and replace function to change the password. Pretty neat huh?
 
 # Reality
+So at home I have all the solutions tested and ready. Excitingly in data centre, I opened up my work laptop happily typing in the codes line by line and then realized the batch script did not work. I still have to type in username and password! Long story short, the work laptop has disabled the ability to access saved credentials. Well, that's life. At least I've tried. And maybe this simple script can work for you or my future project.
